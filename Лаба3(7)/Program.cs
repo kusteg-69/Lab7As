@@ -14,7 +14,7 @@ namespace Лаба3_7
     {
         static async Task Main(string[] args)
         {
-            string ipAddress = "0.0.0.0";
+            string ipAddress = "127.0.0.1";
             int port = 1314;
 
             HttpListener listener = new HttpListener();
