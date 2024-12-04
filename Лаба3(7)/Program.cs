@@ -30,7 +30,7 @@ namespace Лаба3_7
                                 "Это пример текста, созданного сервером.\n" +
                                 "Изображение доступно по следующему пути: EeJhL8Lm4KY.jpg";
 
-            string textFilePath = @"..\Kust_69\info.txt";
+            string textFilePath = @"Kust_69\info.txt";
             //string imageFilePath = @"C:\Users\user\Desktop\Сыркин\EeJhL8Lm4KY.jpg";
 
             File.WriteAllText(textFilePath, textContent);
