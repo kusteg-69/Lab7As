@@ -14,7 +14,7 @@ namespace Лаба3_7
     {
         static async Task Main(string[] args)
         {
-            string ipAddress = "127.0.0.1";
+            string ipAddress = Dns.GetHostName();
             int port = 1314;
 
             HttpListener listener = new HttpListener();
@@ -36,22 +36,22 @@ namespace Лаба3_7
             File.WriteAllText(textFilePath, textContent);
 
 
-            string browserPath = @"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe";
+            //string browserPath = @"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe";
 
-            if (File.Exists(browserPath))
-            {
-                string url = $"http://{ipAddress}:{port}/";
-                Console.Write("Открываю браузер");
+            //if (File.Exists(browserPath))
+           // {
+               // string url = $"http://{ipAddress}:{port}/";
+               // Console.Write("Открываю браузер");
 
-                Process.Start(new ProcessStartInfo
-                {
-                    FileName = browserPath,
-                    Arguments = url,
-                    UseShellExecute = true
-                });
+               // Process.Start(new ProcessStartInfo
+               // {
+                //    FileName = browserPath,
+                 //   Arguments = url,
+                 //   UseShellExecute = true
+                //});
 
 
-            }
+          //  }
 
             while (true)
             {
