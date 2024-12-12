@@ -30,7 +30,7 @@ namespace Лаба3_7
                                 "Это пример текста, созданного сервером.\n" +
                                 "Изображение доступно по следующему пути: EeJhL8Lm4KY.jpg";
 
-            string textFilePath = @"Kust_69\info.txt";
+            string textFilePath = @"Kust_69/info.txt";
             //string imageFilePath = @"C:\Users\user\Desktop\Сыркин\EeJhL8Lm4KY.jpg";
 
             File.WriteAllText(textFilePath, textContent);
@@ -63,7 +63,7 @@ namespace Лаба3_7
 
         static async Task HandleRequestAsync(HttpListenerContext context)
         {
-            Environment.CurrentDirectory = @"C:\Users\user\Desktop\Сыркин"; // Путь в директорий
+            Environment.CurrentDirectory = @"Kust_69"; // Путь в директорий
             HttpListenerRequest request = context.Request;//получаем данные запроса
             HttpListenerResponse response = context.Response;//получаем объект для установки ответа
 
